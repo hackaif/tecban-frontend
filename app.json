@@ -1,0 +1,12 @@
+{
+  "name": "tecBanApp",
+  "displayName": "tecBanApp",
+  "expo": {
+    "name": "tecBanApp",
+    "slug": "tecBanApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
