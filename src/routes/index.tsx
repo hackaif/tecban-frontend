@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { ApplicationState } from '../store/index';
 
 import DrawerRoutes from './drawer.routes';
-// import AppRoutes from './app.routes';
+import AuthRoutes from './auth.routes';
 
 const Routes: React.FC = () => {
   const selectIsSigned = (state: ApplicationState) => state.auth.signed;
@@ -20,9 +20,7 @@ const Routes: React.FC = () => {
     return <ActivityIndicator size="large" color="#e72051" />;
   }
 
-  // signed ? <AppRoutes /> : <AuthRoutes />
-
-  return <DrawerRoutes />;
+  return signed ? <DrawerRoutes /> : <AuthRoutes />;
 };
 
 export default Routes;

@@ -29,32 +29,32 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = props => {
       <DrawerContentScrollView {...props}>
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => <FeatherIcon name="x" color={color} size={30} />}
           label="Fechar"
           onPress={() => props.navigation.dispatch(DrawerActions.closeDrawer())}
         />
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => (
             <FeatherIcon name="home" color={color} size={30} />
           )}
-          label="Ínicio"
+          label="Início"
           onPress={() => props.navigation.navigate('Dashboard')}
         />
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => (
             <FeatherIcon name="user" color={color} size={30} />
           )}
           label="Perfil"
-          onPress={() => {}}
+          onPress={() => props.navigation.navigate('Profile')}
         />
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => (
             <FeatherIcon name="map" color={color} size={30} />
           )}
@@ -63,9 +63,9 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = props => {
         />
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => (
-            <FeatherIcon name="sliders" color={color} size={30} />
+            <FeatherIcon name="dollar-sign" color={color} size={30} />
           )}
           label="Transações"
           onPress={() => props.navigation.navigate('Transactions')}
@@ -74,7 +74,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = props => {
       <View>
         <DrawerItem
           inactiveTintColor="#000000"
-          labelStyle={{ color: '#000000', fontSize: 28 }}
+          labelStyle={{ color: '#000000', fontSize: 18, fontWeight:"bold" }}
           icon={({ color }) => (
             <FeatherIcon name="log-out" color={color} size={30} />
           )}

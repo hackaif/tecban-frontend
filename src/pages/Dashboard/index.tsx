@@ -26,8 +26,10 @@ const Dashboard: React.FC = () => {
       <Content>
         <InfoCard
           icon="user"
-          title="Guilerme - Nível 3"
+          title="Guilherme - Nível 3"
           description="1089 pontos"
+          chevronVisible
+          onPress={() => navigation.navigate('Profile')}
         />
         <Card iconHeader="credit-card" iconTitle="Cartão Recomendado">
           <ImageCard source={card} style={{ resizeMode: 'contain' }} />
@@ -52,7 +54,7 @@ const Dashboard: React.FC = () => {
           <TextContainer>
             <>
               <TextCardBody color="#c4c4c4">
-                Iphone 11 Pro
+                iPhone 11 Pro
                 {`\n`}
                 <TextCardBody color="#E54355">R$ 6000,00</TextCardBody>
                 {`\n`}
@@ -72,12 +74,12 @@ const Dashboard: React.FC = () => {
             iconHeader="tag"
             iconTitle="Meus cupons"
             // eslint-disable-next-line @typescript-eslint/no-empty-function
-            onPress={() => {}}
+            onPress={() => navigation.navigate('Profile')}
           />
 
           <ActionButton
             borderMiddle
-            iconHeader="sliders"
+            iconHeader="dollar-sign"
             iconTitle="Minhas transações"
             // eslint-disable-next-line @typescript-eslint/no-empty-function
             onPress={() => navigation.navigate('Transactions')}

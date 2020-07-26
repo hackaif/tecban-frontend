@@ -11,6 +11,7 @@ import { DrawerActions } from '@react-navigation/native';
 
 import Dashboard from '../pages/Dashboard';
 import Transactions from '../pages/Transactions';
+import Profile from '../pages/Profile';
 
 const Stack = createStackNavigator();
 
@@ -75,6 +76,7 @@ const AppRoutes: React.FC<Props> = ({ navigation }) => (
   >
     <Stack.Screen name="Dashboard" component={Dashboard} />
     <Stack.Screen name="Transactions" component={Transactions} />
+    <Stack.Screen name="Profile" component={Profile} />
   </Stack.Navigator>
 );
 

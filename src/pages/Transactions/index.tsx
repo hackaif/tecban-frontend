@@ -1,30 +1,41 @@
 import React from 'react';
 
-// import card from '../../assets/card.png';
-// import iphone from '../../assets/iphone.png';
+import { Text } from 'react-native';
 
-import Card from '../../components/Card';
+import * as Unicons from '@iconscout/react-native-unicons';
 
-// import ActionButton from '../../components/ActionButton';
+import InfoCard from '../../components/InfoCard';
+
+import TableArea from '../../components/TableArea';
 
 import {
   Container,
   Content,
   // ImageCard,
   // TextContainer,
+  DropdownButtonText,
+  DropdownButtonArea,
   TextCardBody,
+  DropdownButton
 } from './styles';
-// import ActionButtonList from '../../components/ActionButtonList';
+import TransactionList from '../../components/TransactionList';
 
 const Transactions: React.FC = () => {
   return (
-    <Container>
+    <Container style={{flex: 1}}>
       <Content>
-        <Card iconHeader="credit-card" iconTitle="Cartão Recomendado">
-          <TextCardBody color="#c4c4c4">
-            Nós te recomendamos o cartão
-          </TextCardBody>
-        </Card>
+        <InfoCard
+            icon="dollar-sign"
+            title="Transações"
+            description="R$ 465,64 restantes"
+        />
+        <DropdownButtonArea>
+          <DropdownButton>
+            <DropdownButtonText>Todas</DropdownButtonText>
+            <Unicons.UilAngleRight size={24} color="#fff" />
+          </DropdownButton>
+        </DropdownButtonArea>
+        <TableArea />
       </Content>
     </Container>
   );

@@ -1,12 +1,28 @@
 {
-  "name": "tecBanApp",
-  "displayName": "tecBanApp",
+  "name": "CrediFast",
+  "displayName": "CrediFast",
   "expo": {
-    "name": "tecBanApp",
-    "slug": "tecBanApp",
+    "name": "CrediFast",
+    "slug": "CrediFast",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.oneo.credifast"
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "icon": "./assets/Icon.png",
+    "splash": {
+      "image":"./assets/Splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#312E38"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "androidStatusBar": {
+      "hidden":true
+    }
   }
 }

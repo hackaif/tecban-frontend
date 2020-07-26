@@ -4,7 +4,7 @@ interface TextCardProps {
   color: string;
 }
 
-export const Container = styled.ScrollView`
+export const Container = styled.View`
   background-color: #312e38;
 `;
 
@@ -27,4 +27,21 @@ export const TextContainer = styled.View`
 export const TextCardBody = styled.Text<TextCardProps>`
   color: ${props => props.color};
   font-size: 12px;
+`;
+
+export const DropdownButtonArea = styled.View`
+  width:100%;
+`;
+
+export const DropdownButtonText = styled.Text`
+  font-size: 18px;
+  color: #c4c4c4;
+  font-weight: bold;
+`;
+
+export const DropdownButton = styled.TouchableOpacity`
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  flex-direction: row;
 `;
